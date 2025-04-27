@@ -1,26 +1,47 @@
-# Biblioteca-C-
+# TP1 - DSOO: Gestión de Biblioteca
 
-Este es el repositorio del 1er TP obligatorio de DSOO.
+## Descripción
 
-Tipo: Trabajo práctico obligatorio - Entrega en la semana 7
-Formato: TP1_ComX_GrupoX_Apellido1_Apellido2_Apellido3_Apellido4_Apellido5.zip o rar. MUY IMPORTANTE RESPETAR EL NOMBRE DE LA ENTREGA PARA SU POSTERIOR ORGANIZACIÓN Y SEGUIMIENTO. Entrega un representante del equipo, respetando los que registraron oportunamente en la planilla (corregirla de ser necesario). Envío de todos los archivos correspondientes DENTRO de un archivo comprimido, indicando la comisión, el número del grupo y los apellidos de los integrantes del mismo.
-Objetivo:  
-Descripción:
-Usando el ejemplo de la biblioteca  visto durante la semana en la explicación, nos piden como requerimiento que la misma tenga una colección de lectores registrados. De los lectores conocemos su nombre y dni.
+Este es el repositorio del **1er TP obligatorio** de **Desarrollo de Software Orientado a Objetos (DSOO)**.
 
-Cada lector puede tener hasta un máximo de 3 prestamos vigentes. 
+### Detalles de la Entrega
 
-Cuando se realiza un préstamo, se extrae de la biblioteca el libro para entregárselo al lector (si es que puede retirarlo).
+- **Tipo:** Trabajo práctico obligatorio  
+- **Entrega en la semana 7**
+- **Formato de Entrega:**  
+  `TP1_ComX_GrupoX_Apellido1_Apellido2_Apellido3_Apellido4_Apellido5.zip` o `.rar`  
+  *MUY IMPORTANTE* respetar el nombre de la entrega para su posterior organización y seguimiento.
 
-Es decir, se debe retirar el libro de la lista de libros que posee la biblioteca para asignársela a la lista de libros que posee el lector en préstamo.
+- **Representante del equipo:**  
+  La entrega debe ser realizada por un representante del equipo, quien debe haber sido registrado previamente en la planilla (corregirla de ser necesario).
 
-Para hacer:
+- **Archivos a entregar:**  
+  Todos los archivos correspondientes deben ser entregados **dentro de un archivo comprimido**, indicando la comisión, el número del grupo y los apellidos de los integrantes.
 
-Ampliar el UML a los nuevos requerimientos.
-Desarrollar el método altaLector que pasándole los parámetros necesarios de el alta a un lector dentro de la lista de lectores si es que no se encontraba previamente registrado.
-Desarrollar el método prestarLibro de la clase Biblioteca la cual recibe por parámetro el título de un libro y el dni del lector que lo solicita y retorna un string con los posibles valores:
-"PRESTAMO EXITOSO" (en este caso el libro se le pudo prestar al lector, se lo quitó de la lista de libros que dispone la biblioteca y se lo adjudicó al lector).
-"LIBRO INEXISTENTE" (cuando el libro no se encuentra dentro de la colección de libros en la biblioteca)
-"TOPE DE PRESTAMO ALCAZADO" (cuando el lector ya posee tres libros en préstamo).
-"LECTOR INEXISTENTE" (cuando el lector no es se encuentra registrado dentro de la colección de lectores en la biblioteca).
-Generar un video grupal, con cámaras activas, donde cada integrante explique parte del desarrollo y funcionamiento del proyecto.
+## Objetivo
+
+El objetivo es implementar una **biblioteca** que gestione los préstamos de libros y los lectores registrados.
+
+## Descripción del Proyecto
+
+Se nos pide que, utilizando el ejemplo de la biblioteca visto durante la semana en clase, la misma tenga una colección de **lectores registrados**, de los cuales conocemos su **nombre** y **DNI**.
+
+Cada lector puede tener hasta **tres préstamos vigentes**.
+
+### Funcionalidad de los Préstamos:
+
+Cuando se realiza un préstamo, el libro debe ser extraído de la biblioteca y entregado al lector (si es que puede retirarlo). Es decir, el libro se debe **quitar de la lista de libros** de la biblioteca y **asignarse** a la lista de libros en préstamo del lector.
+
+## Tareas a Realizar
+
+1. **Ampliar el UML** con los nuevos requerimientos.
+2. **Desarrollar el método `altaLector`** que, pasándole los parámetros necesarios, dé de alta a un lector dentro de la lista de lectores si no estaba previamente registrado.
+3. **Desarrollar el método `prestarLibro`** de la clase **Biblioteca**, el cual recibe el título de un libro y el DNI del lector que lo solicita. Este método debe retornar uno de los siguientes mensajes:
+   - `"PRESTAMO EXITOSO"`: El libro fue prestado exitosamente, se lo quitó de la lista de la biblioteca y se lo adjudicó al lector.
+   - `"LIBRO INEXISTENTE"`: El libro no está en la colección de la biblioteca.
+   - `"TOPE DE PRESTAMO ALCANZADO"`: El lector ya tiene tres libros prestados.
+   - `"LECTOR INEXISTENTE"`: El lector no está registrado en la biblioteca.
+
+4. **Generar un video grupal** con cámaras activas, donde cada integrante explique su parte del desarrollo y funcionamiento del proyecto.
+
+---
